@@ -1,0 +1,9 @@
+extends layout
+include mixins/_service
+
+block content
+   h2= title
+   .service_wrapper
+      each service in allServices
+        +serviceList(service)
+        

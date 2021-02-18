@@ -1,0 +1,34 @@
+extends layout
+include mixins/_service
+
+block content
+   each service in serviceData
+        .button_wrapper
+            a(href=`${service._id}/update`)
+              button(class="button_small" class="btn btn-danger" id="button_admin") Update Service 
+            a(href=`${service._id}/delete`)
+              button(class="button_small" class="btn btn-danger" id="button_admin") Delete Hotel
+        .service_wrapper  
+           +serviceList(service)
+
+
+
+
+
+
+
+
+
+
+
+//-     h3=title
+//-     .button_wrapper
+//-       a(href=`${service._id}/update`)
+//-             button(class="button_small" class="btn btn-danger" id="button_admin") Update Service
+//-       a(href=`${service._id}/delete`)
+//-             button(class="button_small" class="btn btn-danger" id="button_admin") Delete Service
+
+//-       .outer_wrapper
+//-         each service in serviceData
+//-               .service_wrapper
+//-                  +serviceList(service)

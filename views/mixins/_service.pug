@@ -1,0 +1,141 @@
+
+mixin serviceList(service)
+       
+               .container
+                  .services
+                     .service_icon
+                        a(href=`/all/${service._id}`)
+                           img(src=`/images/${service.service_icon}`)
+                           h5(style="font-weight: bold;")=`${service.service_name}`
+                        hr 
+                        -const titleName = 'Rejic Technovaz';
+                        if title == titleName
+                           -const description = `${service.service_description.substr(0,110)}`     
+                           p !{description}
+                        else 
+                          -const description = `${service.service_description}`     
+                          p !{description} 
+
+
+
+               .container         
+                  if url.startsWith('/all/')      
+                     -const serviceName = 'Social Media Platform Management';
+                     -const serviceNamee = service.service_name; 
+                     
+                     if serviceNamee == serviceName
+                       .social_media
+                         #pricing.container-fluid
+                           .text-center
+                             h2 Pricing
+                             h4 Choose a payment plan that works for you
+
+                           .row.slideanim
+                             .col-sm-4.col-xs-12.social-pack
+                               .panel.panel-default.text-center
+                                 .panel-heading
+                                   h1 Basic
+                                 .panel-body
+                                   p
+                                     strong 20
+                                     |  Lorem
+                                   p
+                                     strong 15
+                                     |  Ipsum
+                                   p
+                                     strong 5
+                                     |  Dolor 
+                                   p
+                                     strong 2
+                                     |  Sit
+                                   p
+                                     strong Endless
+                                     |  Amet
+                                 .panel-footer
+                                   h3 $19
+                                   h4 per month
+                                   button.btn.btn-lg Sign Up
+                             .col-sm-4.col-xs-12.social-pack
+                               .panel.panel-default.text-center
+                                 .panel-heading
+                                   h1 Pro
+                                 .panel-body
+                                   p
+                                     strong 50
+                                     |  Lorem
+                                   p
+                                     strong 25
+                                     |  Ipsum
+                                   p
+                                     strong 10
+                                     |  Dolor
+                                   p
+                                     strong 5
+                                     |  Sit
+                                   p
+                                     strong Endless
+                                     |  Amet
+                                 .panel-footer
+                                   h3 $29
+                                   h4 per month
+                                   button.btn.btn-lg Sign Up
+                             .col-sm-4.col-xs-12.social-pack
+                               .panel.panel-default.text-center
+                                 .panel-heading
+                                   h1 Premium
+                                 .panel-body
+                                   p
+                                     strong 100
+                                     |  Lorem
+                                   p
+                                     strong 50
+                                     |  Ipsum
+                                   p
+                                     strong 25
+                                     |  Dolor
+                                   p
+                                     strong 10
+                                     |  Sit
+                                   p
+                                     strong Endless
+                                     |  Amet
+                                 .panel-footer
+                                   h3 $49
+                                   h4 per month
+                                   button.btn.btn-lg Sign Up
+
+                     if url.startsWith('/all/')   
+                        -const serviceeName = 'Graphics design and Printing';
+                        -const serviceNamee = service.service_name; 
+
+                        if serviceNamee == serviceeName
+                            .Portifolio
+                              .row 
+                                .col-md-4 
+                                .col-md-4
+                                   h2(class="whatWedoo" style="font-weight: bold;" id="service") Portifolio
+                                .col-md-4
+                              .logo_portifolio 
+                                h3(style="font-weight: bold;") LOGO DESIGN
+                                hr
+                                ul 
+                                  li 
+                                    img(src="/images/Portifolio/logo/MILES 2.png") 
+                                  li 
+                                    img(src="/images/Portifolio/logo/Nazif OG FILE LOGO.png")   
+                                  li 
+                                    img(src="/images/Portifolio/logo/SHINE LOGO IDEA 2.png")
+                                  li 
+                                    img(src="/images/Portifolio/logo/jmc_logo Transparent.png") 
+                                  li 
+                                    img(src="/images/Portifolio/logo/Mkombozi.png")  
+                                  li 
+                                    img(src="/images/Portifolio/logo/Gatenza.png")
+                                h3(style="font-weight: bold;") PRINTING 
+                                hr
+                                ul 
+                                  li 
+                                                     
+                                                
+                                  
+                                  

@@ -1,0 +1,27 @@
+mixin serviceForm(service={})
+ .container
+   form(action="", method="POST")
+    .form_input
+       label(for="service_name" ) Service name
+       input(type="text" id="service_name" name="service_name" value=service.service_name required)
+    .form_input
+       label(for="service_description") Service description
+                        hr      
+       textarea(type="text" id="service_description" name="service_description"   cols="30" rows="10"  required)=service.service_description 
+    .form_input
+       label(for="service_icon") Service icon
+       input(type="file" id="service_icon" name="service_icon")
+    .form_input
+       label(for="image") Service image
+       input(type="file" id="image" name="image")
+    .form_input
+       label(for="available") Available
+       input(type="radio" id="available" name="available" value="true" checked) 
+       label(for="unavailable") Unavailable
+       input(type="radio" id="unavailable" name="available" value="false")  
+    .form_input
+       button(type="submit" class="button_small" class="btn btn-danger" id="button_admin") CONFIRM         
+     
+   script(src="/ckeditor/ckeditor.js")
+   script.
+       CKEDITOR.replace('service_description');

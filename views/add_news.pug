@@ -1,0 +1,34 @@
+extends layout
+
+block content
+
+
+   a(href="/admin")
+     button(type="button" class="button_small" class="btn btn-success") Back to Admin
+
+   h2= title  
+
+   form(action="", method="POST")
+        .form_input
+           label(for="news_name") News name
+           input(type="text" id="news_name" name="news_name" value=news.news_name required)
+        .form_input
+           label(for="news_description") News description
+           textarea(type="text" id="news_description" name="news_description" cols="30" rows="10" required)=news.news_description  
+        .form_input
+           label(for="news_image") News Image
+           input(type="file" id="news_image" name="news_image" required)
+        .form_input
+           label(for="news_category") News category
+           input(type="text" id="news_category" name="news_category" value=news.news_category required)
+        .form_input
+            label(for="date_posted") Date posted
+            input(type="date" id="date_posted" name="date_posted" required)
+        .form_input
+            label(for="available") Available
+            input(type="radio" id="available" name="available" value="true" checked) 
+            label(for="unavailable") Unavailable
+            input(type="radio" id="unavailable" name="available" value="false")  
+        .form_input
+            button(type="submit" class="button_small" class="btn btn-danger" id="button_admin") CONFIRM         
+        

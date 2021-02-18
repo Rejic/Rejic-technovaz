@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  h2=title
+  form(action="" method="POST")
+     .input_wrapper
+       label(for="news_id") News id:
+       input(type="text" name="news_id" id="news_id" )
+       p OR
+     .input_wrapper
+       label(for="news_name") News name:
+       input(type="text" name="news_name" id="news_name" )
+     .input_wrapper
+       button(type="submit" class="button_small") CONFIRM  

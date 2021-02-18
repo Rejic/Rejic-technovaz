@@ -1,0 +1,22 @@
+extends layout
+include mixins/_news
+
+
+block content
+      .outer_wrapper
+          .service_slide
+            img(src="images/Services/carousel1.png" class="images")
+          hr(class="line")
+
+          
+          .news_wrapper
+            .container
+              .row
+                 .col-md-4
+                 .col-md-4
+                    h2(class="whatWedoo")= title
+                 .col-md-4   
+            each news in allNews
+              +news(news)
+                  
+            

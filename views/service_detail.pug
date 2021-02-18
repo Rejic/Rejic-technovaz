@@ -1,0 +1,31 @@
+extends layout
+include mixins/_service
+
+
+
+block content
+      .outer_wrapper
+      each service in serviceData
+           if url.startsWith('/all/')  
+            .service_header
+                  img(src=`/images/Services/${service.image}`)
+                  hr(class="line")             
+                  .centered
+                     h1(style="font-weight: bold;") 
+                       span(class="info-chat") Service/ 
+                       span #{service.service_name}  
+           .container
+              .row
+                .col-md-4
+                .col-md-4
+                  h2(style="font-weight: bold;" class="whatWedooo") Service Description
+                .col-md-4  
+           .service_wrapper
+                 +serviceList(service)
+             
+                
+
+
+
+  
+

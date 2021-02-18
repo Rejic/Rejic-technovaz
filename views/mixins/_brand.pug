@@ -1,0 +1,34 @@
+mixin brand
+
+
+      .brand-area.pt-70
+        .container
+            .row
+                .owl-carousel.owl-theme
+                    .item.container
+                      img(src='/images/LOGO/SUA.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/JMC.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/Shine.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/NAZIF.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/Gatenza.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/WICO.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/BSM.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/MP.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/Meddy.png' class="brand")
+                    .item.container
+                      img(src='/images/LOGO/Moro Asilia logo.png' class="brand")
+                div
+                  div
+                    div
+                    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js' integrity='sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==' crossorigin='anonymous')
+                    //- script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' integrity='sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==' crossorigin='anonymous')
+                    script(type='text/javascript').
+                        $('.owl-carousel').owlCarousel({autoplaySpeed: 4500, autoplayTimeout: 4500, nav: false, dots: false, slideTransition: 'linear', autoplay: true,loop:true,margin:10,responsiveClass:true,responsive:{0:{items:2,nav:true},600:{items:2,nav:false},1000:{items:4,nav:true,loop:false}}});

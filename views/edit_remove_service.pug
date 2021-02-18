@@ -1,0 +1,15 @@
+extends layout
+
+block content
+   h2=title
+   form(action="" method="POST")
+     .input_wrapper
+       label(for="service_id") Service id:
+       input(type="text" name="service_id" id="service_id" )
+       p OR
+     .input_wrapper
+       label(for="service_name") Service name:
+       input(type="text" name="service_name" id="service_name" )
+     .input_wrapper
+       button(type="submit" class="button_small") CONFIRM  
+

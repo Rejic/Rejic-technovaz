@@ -1,0 +1,10 @@
+extends layout
+include mixins/_add_service
+block content
+
+  a(href="/admin")
+     button(type="button" class="button_small" class="btn btn-success" ) Back to Admin
+  h2= title
+  +serviceForm(service)
+
+  

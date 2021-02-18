@@ -1,0 +1,77 @@
+doctype html
+html
+  head
+    include mixins/_footer
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale= 1, shrink-to-fit=no")
+    meta(http-equiv="X-UA-Compatible" content="ie-edge")
+    title= title
+    link(rel="stylesheet" href="/stylesheets/style.css")
+    link(rel="stylesheet" href="/stylesheets/bootstrap.min.css")
+    link(rel="stylesheet" href="stylesheets/service.css")
+    link(rel="stylesheet" href="stylesheets/text.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet")
+    link(rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css")
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css' integrity='sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==' crossorigin='anonymous')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css' integrity='sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==' crossorigin='anonymous')
+    script(src='/javascripts/javascript.js')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous")    
+    script( src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script( src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous")
+    script( src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous")
+
+  body
+    //- // LOGO //
+    .container-fluid 
+      .row
+        .col-m-3 
+            a(href="/")
+              img(src="/images/logo.png" class="img-fluid" alt="Responsive image")
+        .col-md-8 
+        .col-md-2 
+              
+        
+
+    nav.navbar.navbar-expand-lg.cnavbar.navbar-dark.bg-dark.sticky-top
+         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarTogglerDemo01' aria-controls='navbarTogglerDemo01' aria-expanded='false' aria-label='Toggle navigation')
+           span.navbar-toggler-icon
+         #navbarTogglerDemo01.collapse.navbar-collapse
+           a.navbar-brand(href='/') Rejic Technovaz
+           ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+             li.nav-item.active
+               a.nav-link(href='/')
+                 | Home 
+                 span.sr-only (current)
+             li.nav-item
+               a.nav-link(href='/about-Us') About Us
+             li.nav-item
+               a.nav-link(href='/#service') Our services
+             li.nav-item
+               a.nav-link(href='/Contact-Us') Contact
+             li.nav-item
+               a.nav-link(href='/lates-news') Lates news
+           form.form-inline.my-2.my-lg-0
+             -const titleName='Rejic Technovaz';
+             if title == titleName 
+                  a(href="/Contact-Us" )
+                    button(type="button" class="btn btn-danger" id="quote") 
+                      span(style="font-weight: bold;") REQUEST QUOTE 
+                        
+             input#Search.form-control.mr-sm-2(type='text' placeholder='Search' aria-label='Search' name='search' required='')
+             button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+   
+         
+                  
+    
+
+    block content 
+    hr(class="line")    
+    +footer
+
+
+
+
+
+

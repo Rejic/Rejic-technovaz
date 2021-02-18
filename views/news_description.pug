@@ -1,0 +1,13 @@
+extends layout
+include mixins/_news
+block content
+
+   h2=title
+   each news in newsData
+        .button_wrapper
+            a(href=`${news._id}/update`)
+              button(class="button_small" class="btn btn-danger" id="button_admin") Update News
+            a(href=`${news._id}/delete`)
+              button(class="button_small" class="btn btn-danger" id="button_admin") Delete News
+        .news_wrapper  
+           +news(news)

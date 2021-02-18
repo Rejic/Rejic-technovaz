@@ -1,0 +1,185 @@
+extends layout
+include mixins/_service
+include mixins/_brand
+include mixins/_footer
+
+
+
+
+
+block content 
+  .service_slide
+     #carouselExampleIndicators.carousel.slide(data-ride='carousel' data-interval="4000" data-wrap="true" )
+         ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+            li(data-target='#carouselExampleIndicators', data-slide-to='1')
+            li(data-target='#carouselExampleIndicators', data-slide-to='2')
+         .carousel-inner
+            .carousel-item.active
+               img.d-block(src='/images/Services/Capturee.png', alt='First slide')
+               .carousel-caption.d-block
+                  .animated-title
+                     .text-top
+                        div
+                           span Welcome
+                           span Rejic Technovaz,
+                     .text-bottom(style="color: white; " stroke-width="1" d="M5 20 l215 0")
+                        div welcome home
+            .carousel-item
+               img.d-block(src='/images/Services/Capture.png', alt='Second slide')
+               .carousel-caption.d-block
+                 .animated-title
+                     .text-top
+                        div
+                           span Welcome to the
+                           span Brand that keep               
+                     .text-bottom(style="color: white; " stroke-width="1" d="M5 20 l215 0")
+                        div her Promises
+            .carousel-item
+               img.d-block(src='/images/Services/carousel1.png', alt='Third slide')
+               .carousel-caption.d-block
+                 .animated-title
+                     .text-top
+                        div
+                           span See Our
+                           span Best services           
+                     .text-bottom(style="color: white; " stroke-width="1" d="M5 20 l215 0")
+                        div Services here
+
+         a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+         a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+   
+  hr(class="line") 
+
+  .outer_wrapper
+      .whatWedo_outer
+         .container
+            .whatWedo_wrapper.row
+               .col-md-4
+               .col-md-4         
+                  h2(class="home" style="font-weight: bold;") WHO ARE WE?
+               .col-md-4
+            P "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  
+
+
+      
+      .service_div.container
+          .row
+            .col-md-4
+            .col-md-4   
+              h2(class="whatWedoo" style="font-weight: bold;" id="service") OUR SERVICES
+            .col-md-4  
+      .container
+            each service in allServices
+             .service_wrapper
+               +serviceList(service)      
+      .conservation_wrapper
+         .service_div.container
+            .row
+               .col-md-4
+               .col-md-4   
+                 h3(class="whatWedooo" style="font-weight: bold;" ) NEED ANY OF OUR SERVICE
+               .col-md-4  
+         .container-fluid.customer_conversation     
+            .container.write_wrapper
+                  h3(style="font-weight: bold;") Why us
+                  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempus sem sed elementum dictum. Etiam iaculis pulvinar libero, quis pharetra nunc mollis eu. Nunc scelerisque accumsan ornare. Sed ut tincidunt erat. Vivamus dictum maximus ante tristique ultricies. Nam tortor ipsum, posuere in magna nec, tempor venenatis lorem. In semper, tellus sed aliquet dignissim, libero velit molestie libero,
+         
+      .tallk.container-fluid     
+         div(id="red" class="container")
+                  .container
+                    .row
+                      .col-md-4
+                      .col-md-4   
+                           h2(class="whatWedoooo") Initiate conversation
+                      .col-md-4               
+                  .talk.container  
+                     h3(style="font-weight: bold;") Write for us
+                     hr    
+                     form(action=""  method="POST")
+                        .input_wrapper
+                           label(for="first_name")
+                           input(type="text" id="first_name" name="first_name" placeholder=" First name" required) 
+                        .input_wrapper
+                           label(for="surname") 
+                           input(type="text" id="surname" name="surname" placeholder="Surname" required)
+                        .input_wrapper
+                           label(for="message") 
+                           textarea(type="text" id="message" name="message" cols="30" rows="5" placeholder="Message" required)
+                        .input_wrapper
+                           button(type="submit" style="font-weight: bold;" class= "buttom_small" class="btn btn-danger" id="button_admin") SEND
+         
+      .testimonials_wrappers.container-fluid
+          .container
+             .row
+               .col-md-4
+               .col-md-4   
+                  h2(class="whatWedoo" style="font-weight: bold;") What clients say
+               .col-md-4 
+          .slideshow-counter
+             .mySlides
+               q I love you the more in that I believe you had liked me for my own sake and for nothing else
+               p(class="author") -- John Keats  
+
+             .mySlides
+               q But man is not made for defeat. A man can be destroyed but not defeated
+               p(class="author") -- Ernest Hemingway
+
+             .mySlides
+               q But man is not made for defeat. A man can be destroyed but not defeated
+               p(class="author") -- Paul Lazaro
+                       
+             a(class="prevv" onclick="plusSlides(-1)") &#10094;
+             a(class="nextt" onclick="plusSlides(1)") &#10095;
+
+          .dot-container  
+             span(class="dot" onclick="currentSlide(1)") 
+             span(class="dot" onclick="currentSlide(2)") 
+             span(class="dot" onclick="currentSlide(3)")
+
+
+      .ourClient_wrapper
+         .container
+             .row
+               .col-md-4
+               .col-md-4   
+                  h2(class="whatWedoo" style="font-weight: bold;") Our clients 
+               .col-md-4 
+         +brand
+     
+        
+     
+            
+         
+            
+
+
+
+
+
+         
+
+
+        
+
+      
+   
+      
+    
+      
+      
+      
+
+           
+                       
+            
+
+
+
+ 
+
+ 

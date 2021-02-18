@@ -1,0 +1,103 @@
+extends layout
+
+block content
+  
+  .contact
+      .row
+        .col-md-2
+        .col-md-8
+           h1(style="font-weight: bold;") Contact us
+           .container
+              h4 We are professionals and passionate people in different fields of Computer technology. For our skills, we are happy to serve community and provide the best services and products that individuals
+        .col-md-2
+  .container 
+    .row
+      .col-md-4
+      .col-md-4 
+        h2(style="font-weight: bold;") Keep in touch
+      .col-md-4        
+  .conta
+    section#contact-page.pt-90.pb-120.gray-bg
+      .container
+        .row 
+          .col-lg-7
+            .contact-from.mt-30
+              .section-title
+              // section title
+              .main-form.pt-45
+                form#contact-form(action='#', method='post', data-toggle='validator')
+                  .row
+                    .col-md-6
+                      .singel-form.form-group
+                        input(name='name', type='text', placeholder='Your name', data-error='Name is required.', required='required')
+                        .help-block.with-errors
+                      // singel form
+                    .col-md-6
+                      .singel-form.form-group
+                        input(name='email', type='email', placeholder='Email', data-error='Valid email is required.', required='required')
+                        .help-block.with-errors
+                      // singel form
+                    .col-md-6
+                      .singel-form.form-group
+                        input(name='subject', type='text', placeholder='Subject', data-error='Subject is required.', required='required')
+                        .help-block.with-errors
+                      // singel form
+                    .col-md-6
+                      .singel-form.form-group
+                        input(name='phone', type='text', placeholder='Phone', data-error='Phone is required.', required='required')
+                        .help-block.with-errors
+                      // singel form
+                    .col-md-12
+                      .singel-form.form-group
+                        textarea(name='message', placeholder='Messege', data-error='Please,leave us a message.', required='required')
+                        .help-block.with-errors
+                      // singel form
+                    p.form-message
+                    .col-md-12
+                      .singel-form
+                        button.main-btn(type='submit' class="btn btn-danger") Send
+                      // singel form
+                  // row
+              // main form
+            // contact from
+          .col-lg-5
+            .contact-address.mt-30
+              ul
+                li
+                  .single_data
+                    .iconn
+                      i.fa.fa-home
+                    .contact_data
+                      p Morogoro, Tanzania
+                  // singel address
+                li
+                  .single_data
+                    .iconn
+                      i.fa.fa-phone
+                    .contact_data
+                      p +255 766 317 761
+                     
+                  // singel address
+                li
+                  .single_data
+                    .iconn
+                      i.fa.fa-envelope-o
+                    .contact_data
+                      p rejictechnovaz@gmail.com
+                      p 
+                  // singel address
+            // contact address
+            .map.mt-30
+              #contact-map
+            // map
+        // row
+      // container
+  
+  .container
+      iframe(class="contact-map map" frameborder='0', style='border:0', src='https://www.google.com/maps/embed/v1/search?q=Uhuru%20Street%2C%20Morogoro%2C%20Tanzania&key=AIzaSyDGtBMCY8Ya2kne5vj41tmTfecAjlpevWA', allowfullscreen='')
+     
+
+
+
+
+                  

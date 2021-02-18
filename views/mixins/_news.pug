@@ -1,0 +1,30 @@
+mixin news(news)
+  .container
+    .news_wrapper
+        .news
+          .news_img
+            a(href="/lates-news" )
+                img(src=`/images/Services/${news.news_image}`)  
+          .news_info
+            a(href="/lates-news")
+              h3(style="font-weight: bold;")= news.news_name
+            hr
+            .news_descri
+              p=news.news_description.substr(0,200)
+              hr
+            .news_category
+              p News Category: 
+                span.btn.btn-outline-danger #{news.news_category}
+            .news_date
+              p Posted: 
+                span.btn.btn-danger #{prettyDate(news.date_posted)}
+              -function prettyDate(dateString){
+               -var date = new Date(dateString);
+               -var d = date.getDate(); 
+               -var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun","Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ];
+               -var m = monthNames[date.getMonth()];
+               -var y = date.getFullYear();
+               -return m+'/'+d+'/'+y;
+              -}
+              
+                 
