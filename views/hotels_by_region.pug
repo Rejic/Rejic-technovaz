@@ -1,0 +1,14 @@
+extends layout
+include mixins/_hotel
+
+block content
+  h2= title
+  each hotel in regionList
+       +hotel(hotel)
+    .hotel_wrapper
+  else
+    li There are no hotels.            
+
+//- passing individual hotel data from our loop (hotel)
+
+

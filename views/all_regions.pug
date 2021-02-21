@@ -1,0 +1,16 @@
+extends layout
+include mixins/_region_list
+block content
+  h2= title
+  .region_wrapper
+       ul
+         each region in allRegions
+           +regionList(region)
+         else
+            li There are no regions
+         
+                  
+
+
+
+  

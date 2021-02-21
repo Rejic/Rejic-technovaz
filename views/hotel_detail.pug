@@ -1,0 +1,22 @@
+extends layout
+include mixins/_hotel
+block content
+  
+  each hotel in hotelData
+    .hotel
+      if url.startsWith('/admin')     
+        a(href=`${hotel._id}/update`)
+          button(class="button_small") Update Hotel 
+        a(href=`${hotel._id}/delete`)
+          button(class="button_small") Delete Hotel
+      +hotel(hotel)
+
+        //- method of javascript to restrict some data not be passed to other url line 7
+
+    
+
+
+    
+
+  
+

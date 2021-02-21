@@ -1,0 +1,19 @@
+extends layout
+include mixins/_hotel
+include mixins/_region_list
+block content
+  
+  .outer_wrapper
+    .hotel_wrapper 
+       h2 Hotels
+        a(href="/all") (see all):
+       ul 
+         each hotel in filteredHotels  
+           +hotel(hotel)
+
+    .region_wrapper
+        h2 Regions
+          a(href="/regions") (see all)
+        ul
+         each region in filteredRegions
+            +regionList(region._id)

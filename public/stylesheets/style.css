@@ -1,0 +1,339 @@
+html {
+  background: #FFFFFF;
+}
+
+body {
+  background: #FFFFFF;
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0 1em;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #53C2C9;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button_continue {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 3em;
+  vertical-align: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(3, 63, 35);
+}
+
+.search_nav {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#deefff+0,98bede+100;Blue+3D+%2310 */
+background: rgb(222,239,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(222,239,255,1) 0%, rgba(152,190,222,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(222,239,255,1) 0%,rgba(152,190,222,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deefff', endColorstr='#98bede',GradientType=0 ); /* IE6-9 */
+
+padding: 0.5em;
+margin-bottom: 0.15em;
+}
+
+.search_nav > form {
+  display: flex;
+  flex-direction: column;  /*or row-reverse*/
+}
+
+input {
+  width: 100%;
+  height: 20px;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
+background: rgb(53,106,160); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 ); /* IE6-9 */
+
+  border-width: 0.1124em;
+  border-radius: 0.39em;
+  padding: 0.4em 0;
+  margin-top: 0.3em;
+  border: 0;
+  text-align: center;
+  border-radius: center;
+  color: white;
+}
+
+.input_wrapper {
+  margin: 0.5em;
+  text-align: center;
+}
+
+select, button {
+  height: 36px;
+  width: 100%;
+  border: none;
+  border-radius: 0.39em;
+}
+
+ button {
+   background:#0D5731;
+   color: #FFFFFF;
+ }
+
+
+img {
+  width: 100%;
+  border-radius: 0.5em;
+}
+
+.hotel {
+  box-sizing: border-box;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f9fe+0,d6f0fd+100;White+3D+%232 */
+background: rgb(242,249,254); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+
+  border-radius: 0.5em;
+  padding: 0.1em;
+  margin: 0 0 1em 0;
+}
+
+.hotel_info {
+  padding: 1em;
+  text-align: center;
+}
+
+.form_input{
+  margin: 1em 0;
+}
+
+.form_input input , textarea {
+  width: 70%;
+  text-align: left;
+}
+
+.form_input label {
+  display: inline-block;
+  width: 20%;
+}
+
+textarea {
+  border: none;
+  border-radius: .5em;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#356aa0+0,356aa0+100;Blue+Flat */
+background: rgb(53,106,160); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(53,106,160,1) 0%, rgba(53,106,160,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(53,106,160,1) 0%,rgba(53,106,160,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=0 ); /* IE6-9 */
+color: white;
+}
+
+#image {
+  background: #FFFFFF ;
+}
+
+.button_small {
+  width: 100px;
+  margin: 0.5em;
+}
+
+.hotel_order_details {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f1da36+32,f1da36+32,fefcea+100 */
+background: #f1da36; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1da36 32%, #f1da36 32%, #fefcea 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f1da36 32%,#f1da36 32%,#fefcea 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f1da36 32%,#f1da36 32%,#fefcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1da36', endColorstr='#fefcea',GradientType=0 ); /* IE6-9 */
+
+
+  text-align: center;
+  padding: 1em;
+  border-radius: 0 0 0.5em 0;
+}
+
+#error {
+  color: red;
+ display: inline;
+ font-size: 0.9em;
+ text-align: left;
+  }
+
+.bookings ul {
+  margin: 2em 0;
+  background:#53C2C9;
+  padding: 10px;
+  border-radius: 1em;
+}  
+
+.bookings li {
+  display: block;
+  background:#356AA0;
+  padding: 0.5em;
+  color: white;
+  
+}
+
+.message {
+  margin: 10px 0;
+  padding: 0.5em;
+  border: 1px solid;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+.close_buton {
+  float: right;
+}
+
+.close_button:hover {
+  cursor: pointer;
+}
+
+.message_info {
+  color: rgb(13, 92, 156)
+}
+
+.message_success {
+  color: #068342;
+}
+
+.message_error {
+color: red;
+}
+
+@media (min-width: 1000px) {
+  nav {
+    flex-direction: row;
+  }
+
+  #error {
+    font-size: 1.03em;
+     }
+ 
+
+  nav a {
+    flex: 1;
+  }
+  nav ul {
+    flex: 2;
+    text-align: right;
+    margin-right: 1em;
+  }
+
+  .search_nav form {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+   
+  }
+  .search_nav {
+    margin-bottom: 0.3em;
+  }
+  .input_wrapper {
+    margin: 0;
+    padding: 0.5em;
+    max-width: 30px 200px;
+    text-align: left;
+  }
+
+  .outer_wrapper .hotel {
+    text-align: left;
+  }
+.hotel_wrapper .hotel {
+    display: flex;
+  }
+  .hotel_img {
+    flex: 1;
+    margin: 1em;
+  }
+
+  .hotel_info {
+    flex: 1;
+    padding: 0 1em;
+    text-align: left;
+  }
+
+   .region_wrapper ul {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 20px;
+     text-align: center;
+   }
+   .region_wrapper h2 {
+     text-align: left;
+   }
+
+   .hotel_order_details {
+     text-align: left;
+   }
+
+}
+
+
+/* CONTENT */
+
+
+/* Hotels and countries view */
+.outer_wrapper {
+   text-align: center;
+   font-size: 1em;
+}
+
+.button_continue {
+  background: #0D5731;
+  color: white;
+  border-width: 100%;
+  padding: 0.7em;
+  border-radius: 0.3em;
+
+}
+
+/* table {
+  border-color: solid;
+  text-align: left;
+  width: 100%;
+}
+
+.orders {
+  padding: 10px;
+} */
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
